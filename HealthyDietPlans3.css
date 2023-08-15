@@ -1,0 +1,125 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,500);
+/*@import url(//fonts.googleapis.com/css?family=Playfair:300,500);*/
+#em1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+#em2 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+#em3 {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+#em4 {
+  display: block;
+  font-size: 1em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+#em5 {
+  display: block;
+  font-size: 0.83em;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+#em6 {
+  display: block;
+  font-size: 0.67em;
+  margin-top: 2.33em;
+  margin-bottom: 2.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+#emp {
+  font-size: 1em;
+  text-align: justify;
+}
+#imj1 {
+  width: 52vw;
+  height: auto;
+}
+
+#accordion {
+  width: 100%;
+  color: #383431;
+}
+
+#collapsetitle {
+  background-color: rgb(200, 219, 190, 0.6);
+}
+
+.container {
+  padding: 0px;
+  margin-right: 10%;
+  margin-left: 10%;
+  color: #383431;
+}
+
+/*button hover*/
+#rbutton:hover {
+  color: white;
+  background-color: #383431;
+}
+
+a.button1 {
+  display: inline-block;
+  padding: 0.02vw 1.2vw;
+  border: 0.09em solid #383431;
+  margin-top: 0.4vw;
+  border-radius: 0.2vw;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 400;
+  color: #383431;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+a.button1:hover {
+  color: #fffffd;
+  background-color: #383431;
+}
+@media all and (max-width: 30vw) {
+  a.button1 {
+    display: block;
+    margin: 0.4vw auto;
+  }
+}
+
+#buttonhover:hover {
+  color: white;
+  background-color: #383431;
+}
+
+/*Horizontal divider */
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #c8dbbe;
+}

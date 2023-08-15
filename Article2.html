@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Homepage3.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link
+      href="https://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
+    <title>thePlannedPlatter</title>
+    <link rel="icon" type="image/png" href="./static/images/Icon2.png" />
+    <style>
+      body {
+        font-family: "Montserrat";
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--Nav bar 1-->
+      <nav
+        class="py-1 navbar navbar-expand-lg navbar-light"
+        style="
+          background-color: #fffffd;
+          color: #383431;
+          font-size: 14px;
+          font-weight: 400;
+        "
+      >
+        <div class="container">
+          <!--<a href="#" class="navbar-brand">Logo</a>-->
+          <div class="logo">
+            <a class="navbar-brand" href="./index.html">
+              <img
+                src="./static/images/Final-logo.png"
+                alt="Logo"
+                width="150px"
+                height="40%"
+              />
+            </a>
+          </div>
+
+          <!--Toggler button-->
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!--Search button
+            <div class="d-none d-lg-block navbar-right">
+              <form class="d-flex ms-auto" action="">
+                <input type="search" placeholder="Search" class="form-control" />
+                <input type="submit" value="Search" class="btn btn-dark" />
+              </form>
+            </div>-->
+
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#learnabout" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="./signup.html" class="nav-link">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a href="./login.html" class="nav-link">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--New Nav bar 2-->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark justify-content-centre text-white"
+        style="background-color: #383431"
+      >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown01"
+          aria-controls="navbarNavDropdown01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="outline-color: #fff"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Div container of na-->
+        <div class="container">
+          <!--<a href="#learnabout" class="nav-link" style="color: #fffffd">All</a>-->
+
+          <!--Div 1 - containing nav bar options and drop downs-->
+
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNavDropdown01"
+            style="color: #fffffd"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="HealthyDietPlans1.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  style="color: #fffffd"
+                >
+                  Healthy Meal Plans
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="./HealthyDietPlans1.html">Healthy Meal Plans</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Clean Eating Meal Plans</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Vegan Meal Plans</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Healthy kids Meal Plans</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Weight loss Meal Plans</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./HealthyDietPlans2.html">All Meal Plans</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown px-4">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="Recipes1.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  style="color: #fffffd"
+                >
+                  Recipes
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="./Recipes1.html">Healthy Breakfast and brunch recipes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Healthy Dessert Recipes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Healthy quick and easy recipes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Healthy Vegetarian Recipes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Healthy Weight loss & Diet Recipes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Healthy Dinner Recipes</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item px-4">
+                <a class="nav-link active" aria-current="page" href="./Lifestyle.html" >Healthy Lifestyle</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link active" aria-current="page" href="./Article1.html" >Articles</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link active" aria-current="page" href="./Excercise.html" >Excercises</a>
+              </li>
+            </ul>
+
+            <!--Search button-->
+            <form class="d-flex input-group w-auto">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Search plans"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-light"
+                id="searchbutton"
+                type="button"
+                data-mdb-ripple-color="dark"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <!--Content-->
+    <div class="container pt-5">
+      <div class="row g-4">
+        <div class="col">
+          <h1 id="emp1">
+            How to Know If Frozen Food Is Safe to Eat After Losing Power
+          </h1>
+          <br />
+          <p id="emp">
+            Don't forget about food safety amidst this wild winter weather.
+            Here's what government officials want you to know so you can steer
+            clear of food-borne illness.
+          </p>
+        </div>
+      </div>
+      <!--Centered Image Start-->
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center text-center">
+          <img
+            class="img-fluid"
+            src="./static/images/Article/Center photo.png"
+            alt="Recipe1"
+            width="400vw"
+            height="400vh"
+          />
+        </div>
+        <div class="col-12 d-flex justify-content-center text-center">
+          <p id="emp">
+            <b>Pictured Recipe: Easy Brown Rice Pilaf with Frozen Vegetables</b>
+          </p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col">
+          <p id="emp">
+            Just in time for Hanukkah and upcoming Christmas festivities, Mother
+            Nature is entering the chat and is definitely making herself known
+            this week. According to the National Weather Service, a "dangerous
+            arctic outbreak" is likely to impact most of the lower 48 states.
+            Frigid temperatures and "life-threatening wind chills" are expected
+            to join snow or freezing rain in many parts of the country making
+            travel challenging to impossible. When whipping winds meet that
+            precipitation—especially the icy rain—power might be at-risk, too.
+            <br />
+            <br />
+            So with that in mind, and with temps as low as -70° F (!) possible
+            in parts of the U.S., it's a good time to brush up on your nearest
+            warming locations. (Search "warming centers near me" for local
+            resources.) It's also a good time to refresh your food safety
+            knowledge in the event of a power outage.
+            <br />
+            <br />
+            <b>Related:</b> Is It Safe to Eat Food in Swollen or Bloated
+            Packaging?
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-2">
+        <div class="col-12 col-lg-6">
+          <h2 id="emp2">How to Know If Frozen Food Is Safe to Eat After Losing Power</h1>
+          <br />
+          <p id="emp"
+            >If you keep the door closed, a fully-stocked freezer should stay at
+            a safe temperature for about 48 hours, the Department of Health & 
+            Human Services (HHS) says. A half-full freezer should be safe for 
+            approximately 24 hours without power.
+            <br>
+            <br>
+            Many foods and drinks should be A-OK to refreeze if they're kept
+            between 0° F (freezer temp) and 40° F (refrigerator temp), although
+            they might lose some quality in the process. If you believe the
+            frozen food has been allowed to hang out above 40° F for more than 2
+            hours, the Department of Health & Human Services (HHS) recommends
+            discarding meats, casseroles, stews, pizzas, eggs and baked goods
+            with custard or cheese. HHS food safety experts confirm that you
+            should be safe to refreeze the following items, and discard the
+            rest:
+          </p>
+          
+          <ul>
+            <li><p id="emp">Hard cheeses</p></li>
+            <li><p id="emp">Fruit juices</p></li>
+            <li><p id="emp">Breads, rolls, muffins, cakes, waffles, pancakes and bagels</p></li>
+            <li><p id="emp">Pie crusts (although "quality loss is considerable")</p></li>
+            <li><p id="emp">Flour</p></li>
+            <li><p id="emp">Cornmeal</p></li>
+            <li><p id="emp">Nuts</p></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-6 p-4" style="display: flex">
+          <img
+            class="img-fluid"
+            src="./static/images/Article/Frozen.png"
+            alt="Recipe2"           
+          />
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="col">
+          
+      
+          <p id="emp">If foods are kept between 0° F and 40° F for a short time, some items are safe to refreeze and consume later. 
+            Toss any food with a strange odor, texture or color, the CDC recommends, and "never taste food to determine its 
+            safety," the HHS warns. If you have any doubts as to whether it's still good or not, it's best to throw it out 
+            and restock fresh. <br> As you do so, check out our guide to the best dietitian-approved frozen foods to have 
+            on-hand for fast and nutritious meals.</p>
+          <br>
+          
+        
+        </div>
+      </div>
+      <hr/>
+      
+    </div>
+    <!--Popular news-->
+    <div class="container my-4">
+      <div><h2 id="em2">News</h2></div>
+      
+      <div class="row g-4">
+        <div class="col-sm-6 col-md-3">
+          <div class="card">
+            <img
+              src="./static/images/Article Main Page/news1.jpg"
+              alt="Dp1"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              
+              <h3 class="card-title" id="em3">
+                The 20 Best Sale Items at Costco in January
+              </h3>
+              
+              <a href="#" class="button1"
+                ><p id="emp" style="font-weight: 400">Read More</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card">
+            <img
+              src="./static/images/Article Main Page/news2.jpg"
+              alt="Dp1"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              
+              <h3 class="card-title" id="em3">
+                25 New Recipes to Bring in the New Year 2023
+              </h3>
+              <a href="#" class="button1"
+                ><p id="emp" style="font-weight: 400">Read More</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card">
+            <img
+              src="./static/images/Article Main Page/news3.jpg"
+              alt="Dp1"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              
+              <h3 class="card-title" id="em3">
+                The Top 10 Trending Recipes of 2022 & 2023
+              </h3>
+              <a href="#" class="button1"
+                ><p id="emp" style="font-weight: 400">Read More</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card">
+            <img
+              src="./static/images/Article Main Page/news4.jpg"
+              alt="Dp1"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              
+              <h3 class="card-title" id="em3">
+                Found Lead in Popular Dark Chocolate Brands
+              </h3>
+              <a href="#" class="button1"
+                ><p id="emp" style="font-weight: 400">Read More</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+
+    <section class="">
+      <!-- Footer -->
+      <footer class=" text-white text-center text-md-start" style="
+      background-color:  #383431;
+      color: #fffffd;
+      font-size: 14px;
+      font-weight: 400;
+    ">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <a href="./index.html">
+                <img
+                  src="./static/images/Footer Logo.png"
+                  alt="Hand picked meal plan 1"
+                  style="width: 200px; height: auto;"
+                />
+              </a>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-3">
+              
+    
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text-white"><p style="font-size: 1.0em">Site</p></a>
+                </li>
+                <li>
+                  <p style="font-size: 1.0em; color: #fffffd;">About us</p>
+                </li>
+                <li>
+                  <p style="font-size: 1.0em; color: #fffffd;">Career</p>
+                </li>
+                <li>
+                  <p style="font-size: 1.0em; color: #fffffd;">Press</p>
+                </li>
+                <li>
+                  <p style="font-size: 1.0em; color: #fffffd;">Become a partner</p>
+                </li>
+                <!--<li>
+                  <a href="#!" class="text-white"><p>Become a partner</p></a>
+                </li>-->
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-3">
+              
+    
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text-white"><p style="font-size: 1.0em">Follow us on</p></a>
+                </li>
+                <li>
+                  <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+              
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+              
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+              
+              
+                  </section>
+                </li>
+                <li>
+                  <p style="font-size: 1.0em; color: #fffffd;">Want to be part of us?</p>
+                </li>
+                <li>
+                  <a href="#!" class="text-white"><p style="font-size: 1.0em;">Get in touch</p></a>
+                </li>
+                <li>
+                  <p style="font-size: 0.8em; color: #fffffd;">
+                    Designed and built with all the love in the world by <br> thePlannedplate team.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+          <!-- Copyright -->
+          <div class="text-center" style="color: #fffffd;">
+            © 2021 Copyright:
+            <a class="#" href="./index.html" style="color: #fffffd;">theplannedplate.com</a>
+          </div>
+      <!-- Copyright -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+      <!-- Footer -->
+    </section>
+    <!--Footer-->
+    
+  </body>
+</html>

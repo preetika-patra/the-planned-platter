@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Homepage3.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link
+      href="https://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
+
+    <title>thePlannedPlatter</title>
+    <link rel="icon" type="image/png" href="./static/images/Icon2.png" />
+
+    <style>
+      body {
+        font-family: "Montserrat";
+        font-size: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!--Nav bar 1-->
+      <nav
+        class="py-1 navbar navbar-expand-lg navbar-light"
+        style="
+          background-color: #fffffd;
+          color: #383431;
+          font-size: 14px;
+          font-weight: 400;
+        "
+      >
+        <div class="container">
+          <!--<a href="#" class="navbar-brand">Logo</a>-->
+          <div class="logo">
+            <a class="navbar-brand" href="./index.html">
+              <img
+                src="./static/images/Final-logo.png"
+                alt="Logo"
+                width="150px"
+                height="40%"
+              />
+            </a>
+          </div>
+
+          <!--Toggler button-->
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!--Search button
+            <div class="d-none d-lg-block navbar-right">
+              <form class="d-flex ms-auto" action="">
+                <input type="search" placeholder="Search" class="form-control" />
+                <input type="submit" value="Search" class="btn btn-dark" />
+              </form>
+            </div>-->
+
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#learnabout" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="./signup.html" class="nav-link">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a href="./login.html" class="nav-link">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--New Nav bar 2-->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark justify-content-centre text-white"
+        style="background-color: #383431"
+      >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown01"
+          aria-controls="navbarNavDropdown01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="outline-color: #fff"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Div container of na-->
+        <div class="container">
+          <!--<a href="#learnabout" class="nav-link" style="color: #fffffd">All</a>-->
+
+          <!--Div 1 - containing nav bar options and drop downs-->
+
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNavDropdown01"
+            style="color: #fffffd"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="HealthyDietPlans1.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  style="color: #fffffd"
+                >
+                  Healthy Meal Plans
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="./HealthyDietPlans1.html">Healthy Meal Plans</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Clean Eating Meal Plans</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Vegan Meal Plans</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Healthy kids Meal Plans</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Weight loss Meal Plans</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./HealthyDietPlans2.html">All Meal Plans</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown px-4">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="Recipes1.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  style="color: #fffffd"
+                >
+                  Recipes
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="./Recipes1.html">Healthy Breakfast and brunch recipes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Healthy Dessert Recipes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Healthy quick and easy recipes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Healthy Vegetarian Recipes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Healthy Weight loss & Diet Recipes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Healthy Dinner Recipes</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item px-4">
+                <a class="nav-link active" aria-current="page" href="./Lifestyle.html" >Healthy Lifestyle</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link active" aria-current="page" href="./Article1.html" >Articles</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link active" aria-current="page" href="./Excercise.html" >Excercises</a>
+              </li>
+            </ul>
+
+            <!--Search button-->
+            <form class="d-flex input-group w-auto">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Search plans"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-light"
+                id="searchbutton"
+                type="button"
+                data-mdb-ripple-color="dark"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Cards for Hand Picked Meal Plans-->
+    <div class="container mt-4 pt-4">
+      <br />
+      <h2 id="em2">Sesame Kohlrabi & Chicken Salad</h2>
+      <br />
+
+      <!--row 1 - card 1-->
+      <div class="card mb-3" style="max-width: 1500px">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <div style="width: 100%; height: 100%">
+              <img
+                src="./static/images/One recipe/rp.png"
+                alt="Hand picked meal plan 1"
+                style="
+                  float: left;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                "
+              />
+            </div>
+          </div>
+          <div class="col-md-7 p-4" style="background: #c8dbbe">
+            <div class="card-body">
+              <h2 class="card-title" id="em2">
+                <b>About the Recipe</b>
+              </h2>
+              <hr />
+              <br />
+              <h4 class="card-text" id="em4" style="font-weight: 400">
+                This popular salad has crunch from almonds and kohlrabi, a
+                bulbous vegetable akin to broccoli and Brussels sprouts but with
+                a gentler, sweeter flavor. In place of the chicken, you might
+                use baked tofu or shrimp.
+              </h4>
+              <h4 id="em4" style="font-weight: 400">
+                Active: 30mins <br /><br />
+                Total: 30mins
+                <br /><br />
+                Servings: 4
+                <br /><br />
+                Nutrition Profile :
+                <br /><br />
+                <ul>
+                  <li>Dairy - Free</li>
+                  <li>Diabetes Appropriate</li>
+                  <li>Egg Free</li>
+                  <li>Gluten Free</li>
+                  <li>High - Protein</li>
+                </ul>
+              </h4>
+              <br />
+              <p class="card-text" id="emp">
+                <small class="text-muted">Last updated 16 mins ago</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End of row 1 - card 1-->
+    </div>
+    <!--Ingredients list-->
+    <!--1st row-->
+    <div class="container">
+      <div class="row">
+        <div class="py-4"><h2 id="em2">Ingredients:</h2></div>
+
+        <div class="col-md-6">
+          <ul>
+            <li>
+              <label for="vinegar">1/4 cup rice vinegar</label>
+            </li>
+            <li>
+              <label for="tamari">3 tablespoons 50%-less-sodium tamari</label>
+            </li>
+            <li>
+              <label for="sauce">1 tablespoon chile- garlic sauce</label>
+            </li>
+            <li>
+              <label for="orange zest">1 tablespoon grated orange zest</label>
+            </li>
+            <li>
+              <label for="cilantro">1/2 cup finely chopped fresh cilantro, divided</label>
+            </li>
+            <li>
+              <label for="oil">2 tablespoons grapeseed or canola oil</label>
+            </li>
+            <li>
+              <label for="sesame oil">2 tablespoons toasted sesame oil</label>
+            </li>
+          </ul>
+        </div>
+
+        <!--start of 2nd col of ingredients-->
+        <div class="col-md-6">
+          <ul>
+            <li>
+              <label for="kholrabi"> 1 large kohlrabi (about 1 pound), peeled and cut into matchsticks</label>
+            </li>
+            <li>
+              <label for="cabbage">3 cups shredded napa cabbage</label>
+            </li>
+            <li>
+              <label for="chicken"> 3 cups shredded cooked chicken</label>
+            </li>
+            <li>
+              <label for="carrots">1 cup grated carrots</label>
+            </li>
+            <li>
+              <label for="snow peas">1 cup thinly sliced snow peas</label>
+            </li>
+            <li>
+              <label for="almonds">1/4 cup toasted sliced almonds</label>
+            </li>
+            <li>
+              <label for="sesame seeds">1 tablespoon toasted sesame seeds</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--video link-->
+    <div class="container pt-4">
+      <div><h2 id="em2">Directions</h2></div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <ul>
+            <li>
+              <h3 id="em3">Step 1</h3>
+              <h4 class="card-text" id="em4" style="font-weight: 400">
+                Preheat oven to 375°F. Lightly coat a 9-by-13-inch baking dish
+                with cooking spray. Combine chicken, rice, poblanos, bell
+                pepper, zucchini, squash, corn, soup, yogurt, pepper and salt in
+                a large bowl; stir until well combined. Transfer the mixture to
+                the prepared baking dish; use a spatula to smooth the top.
+              </h4>
+            </li>
+            <br />
+            <br />
+            <li>
+              <h3 id="em3">Step 2</h3>
+              <h4 class="card-text" id="em4" style="font-weight: 400">
+                Top the casserole evenly with tortilla chips. Cover the baking
+                dish with foil. Bake until the vegetables are tender, about 40
+                minutes. Remove the foil and continue baking, uncovered, until
+                the topping is golden brown and crispy, 15 to 20 minutes. Let
+                rest for 5 minutes before serving.
+              </h4>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 p-4">
+          <div class="video-responsive">
+            <iframe
+              width="450"
+              height="345"
+              src="https://www.youtube.com/embed/USzj8R7sVAI"
+              frameborder="0"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+          <br />
+          <h3 id="em3">Watch the Steps to prepare the salad on a video!</h3>
+        </div>
+      </div>
+      <div><h2 id="em2">Nutrition Facts</h2></div>
+      <div class="pt-2">
+        <h5>Per Serving :</h5>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-5 col-lg-4">
+          <ul id="em4" style="font-weight: 400">
+            <li>432 calories</li>
+            <li>carbohydrates 20g</li>
+            <li>dietary fiber 7g</li>
+            <li>sugars 9g</li>
+            <li>saturated fat 3g</li>
+            <li>mono fat 7g</li>
+            <li>protein 39g</li>
+            <li>poly fat 9g</li>
+            <li>cholesterol 89mg</li>
+            <li>vitamin b3 niacin 15mg</li>
+            <li>vitamin c 94mg</li>
+            <li>vitamin d iu 5IU</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-5 col-lg-4">
+          <ul id="em4" style="font-weight: 400">
+            <li>folate 30mg</li>
+            <li>vitamin k 10mg</li>
+            <li>calcium 133mg</li>
+            <li>chromium 1mcg</li>
+            <li>iron 4mg</li>
+            <li>magnesium 69mg</li>
+            <li>phosphorus 325mg</li>
+            <li>potassium 767mg</li>
+            <li>zinc 1mg</li>
+            <li>omega 6 fatty acid 6g</li>
+            <li>niacin equivalents 22mg</li>
+            <li>selenium 30mcg</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <!--Popular news-->
+    <div class="container my-4">
+      <div><h2 id="em2">More Recipes</h2></div>
+
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="card">
+            <img
+              src="./static/images/Diet recipes page/R 5.png"
+              alt="Dp1"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h3 class="card-title" id="em3">
+                Stuffed Cabbage Soup with corriander
+              </h3>
+              <a href="#" class="button1"
+                ><p id="emp" style="font-weight: 400">Read More</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card">
+            <img
+              src="./static/images/Diet recipes page/R 6.png"
+              alt="Dp1"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h3 class="card-title" id="em3">Vegan Superfood Grain Bowls</h3>
+              <a href="#" class="button1"
+                ><p id="emp" style="font-weight: 400">Read More</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card">
+            <img
+              src="./static/images/Diet recipes page/R 7.png"
+              alt="Dp1"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h3 class="card-title" id="em3">
+                Chicken & Quinoa with red pepper
+              </h3>
+              <a href="#" class="button1"
+                ><p id="emp" style="font-weight: 400">Read More</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card">
+            <img
+              src="./static/images/Diet recipes page/R 8.png"
+              alt="Dp1"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h3 class="card-title" id="em3">
+                Carrot & Beetroot Soup with corriander
+              </h3>
+              <a href="#" class="button1"
+                ><p id="emp" style="font-weight: 400">Read More</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+
+    <section class="">
+      <!-- Footer -->
+      <footer
+        class="text-white text-center text-md-start"
+        style="
+          background-color: #383431;
+          color: #fffffd;
+          font-size: 14px;
+          font-weight: 400;
+        "
+      >
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <a href="./index.html">
+                <img
+                  src="./static/images/Footer Logo.png"
+                  alt="Hand picked meal plan 1"
+                  style="width: 200px; height: auto"
+                />
+              </a>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-3">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text-white"
+                    ><p style="font-size: 1em">Site</p></a
+                  >
+                </li>
+                <li>
+                  <p style="font-size: 1em; color: #fffffd">About us</p>
+                </li>
+                <li>
+                  <p style="font-size: 1em; color: #fffffd">Career</p>
+                </li>
+                <li>
+                  <p style="font-size: 1em; color: #fffffd">Press</p>
+                </li>
+                <li>
+                  <p style="font-size: 1em; color: #fffffd">Become a partner</p>
+                </li>
+                <!--<li>
+                  <a href="#!" class="text-white"><p>Become a partner</p></a>
+                </li>-->
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-3">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text-white"
+                    ><p style="font-size: 1em">Follow us on</p></a
+                  >
+                </li>
+                <li>
+                  <section class="mb-4">
+                    <!-- Facebook -->
+                    <a
+                      class="btn btn-outline-light btn-floating m-1"
+                      href="#!"
+                      role="button"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+
+                    <!-- Twitter -->
+                    <a
+                      class="btn btn-outline-light btn-floating m-1"
+                      href="#!"
+                      role="button"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+
+                    <!-- Instagram -->
+                    <a
+                      class="btn btn-outline-light btn-floating m-1"
+                      href="#!"
+                      role="button"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </section>
+                </li>
+                <li>
+                  <p style="font-size: 1em; color: #fffffd">
+                    Want to be part of us?
+                  </p>
+                </li>
+                <li>
+                  <a href="#!" class="text-white"
+                    ><p style="font-size: 1em">Get in touch</p></a
+                  >
+                </li>
+                <li>
+                  <p style="font-size: 0.8em; color: #fffffd">
+                    Designed and built with all the love in the world by <br />
+                    thePlannedplate team.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+          <!-- Copyright -->
+          <div class="text-center" style="color: #fffffd">
+            © 2021 Copyright:
+            <a class="#" href="./index.html" style="color: #fffffd"
+              >theplannedplate.com</a
+            >
+          </div>
+          <!-- Copyright -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+      <!-- Footer -->
+    </section>
+    <!--Footer-->
+  </body>
+</html>

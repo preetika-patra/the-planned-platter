@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="HealthyDietPlans3.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link
+      href="https://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
+    <title>thePlannedPlatter</title>
+    <link rel="icon" type="image/png" href="./static/images/Icon2.png" />
+    <style>
+      body {
+        font-family: "Montserrat";
+        font-size: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!--Nav bar 1-->
+      <nav
+        class="py-1 navbar navbar-expand-lg navbar-light"
+        style="
+          background-color: #fffffd;
+          color: #383431;
+          font-size: 14px;
+          font-weight: 400;
+        "
+      >
+        <div class="container">
+          <!--<a href="#" class="navbar-brand">Logo</a>-->
+          <div class="logo">
+            <a class="navbar-brand" href="./index.html">
+              <img
+                src="./static/images/Final-logo.png"
+                alt="Logo"
+                width="150px"
+                height="40%"
+              />
+            </a>
+          </div>
+
+          <!--Toggler button-->
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!--Search button
+            <div class="d-none d-lg-block navbar-right">
+              <form class="d-flex ms-auto" action="">
+                <input type="search" placeholder="Search" class="form-control" />
+                <input type="submit" value="Search" class="btn btn-dark" />
+              </form>
+            </div>-->
+
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#learnabout" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="./signup.html" class="nav-link">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a href="./login.html" class="nav-link">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--New Nav bar 2-->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark justify-content-centre text-white"
+        style="background-color: #383431"
+      >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown01"
+          aria-controls="navbarNavDropdown01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="outline-color: #fff"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Div container of na-->
+        <div class="container">
+          <!--<a href="#learnabout" class="nav-link" style="color: #fffffd">All</a>-->
+
+          <!--Div 1 - containing nav bar options and drop downs-->
+
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNavDropdown01"
+            style="color: #fffffd"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="HealthyDietPlans1.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  style="color: #fffffd"
+                >
+                  Healthy Meal Plans
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="./HealthyDietPlans1.html">Healthy Meal Plans</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Clean Eating Meal Plans</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Vegan Meal Plans</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Healthy kids Meal Plans</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Weight loss Meal Plans</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./HealthyDietPlans2.html">All Meal Plans</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown px-4">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="Recipes1.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  style="color: #fffffd"
+                >
+                  Recipes
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="./Recipes1.html">Healthy Breakfast and brunch recipes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Healthy Dessert Recipes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Healthy quick and easy recipes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Healthy Vegetarian Recipes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Healthy Weight loss & Diet Recipes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Healthy Dinner Recipes</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item px-4">
+                <a class="nav-link active" aria-current="page" href="./Lifestyle.html" >Healthy Lifestyle</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link active" aria-current="page" href="./Article1.html" >Articles</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link active" aria-current="page" href="./Excercise.html" >Excercises</a>
+              </li>
+            </ul>
+
+            <!--Search button-->
+            <form class="d-flex input-group w-auto">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Search plans"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-light"
+                id="searchbutton"
+                type="button"
+                data-mdb-ripple-color="dark"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Body content-->
+    <div class="container pt-5">
+      <div class="row">
+        <h1 id="em1">Clean-Eating Meal Plan for Beginners</h1>
+        <p id="emp">
+          This menu plan provides a week's worth of wholesome, simple meals that
+          are suitable for both novice and experienced cooks who want to
+          streamline their routine and increase their intake of nutritious
+          foods.
+        </p>
+        <h6 id="em6">Peter Rowardson</h6>
+      </div>
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <img
+            src="./static/images/Dietplandetails/Image-d1.png"
+            class="img-fluid d-block"
+            alt="Diet plans details1"
+          />
+        </div>
+        <div class="col-2"></div>
+      </div>
+      <div class="row py-4">
+        <div class="col">
+          <p id="emp">
+            "Clean eating" entails filling your plate with nutrient-dense whole
+            foods, such as whole grains, fruits, vegetables, lean proteins,
+            healthy fats, and legumes. These foods all provide essential
+            nutrients, such as fibre, while limiting added sugars and saturated
+            fats, two nutrients that can be harmful to our health if consumed in
+            excess. This simple meal plan is perfect for you if you're new to
+            cooking or are simply overwhelmed right now. This meal plan is not
+            designed to be binding; regardless of how many recipes you make, it
+            is meant to serve as motivation and inspiration. Don't strictly
+            follow a calorie or serving size restriction; rather, pay attention
+            to your hunger and fullness cues. Also, don't disregard your
+            cravings.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--collapsible-->
+
+    <div class="container mt-3">
+      <div><h2 id="em2">Meal Plans for a Week</h2></div>
+
+      <div class="row">
+        <div class="col">
+          <div id="accordion">
+            <!--Dropdown1-->
+            <div class="card mb-2">
+              <div class="card-header" id="collapsetitle">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                  DAY 1 - A little prep at the beginning of the week goes a long
+                  way to make the rest of the week easy.
+                </a>
+              </div>
+              <div
+                id="collapseOne"
+                class="collapse show"
+                data-bs-parent="#accordion"
+              >
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-12 col-lg-4">
+                      <h3 id="em3">DAY 1</h3>
+                      <h4 id="em4">Breakfast (491 calories)</h4>
+                      <p id="emp">
+                        1 cup low-fat plain Greek yogurt (179 calories)<br />
+                        1/4 cup raspberries (19 calories)<br />
+                        3 Tbsp. chopped walnuts (292 calories)
+                      </p>
+                      <h4 id="em4">A.M. Snack (77 calories)</h4>
+                      <p id="emp">1 medium orange</p>
+                      <h4 id="em4">Lunch (360 calories)</h4>
+                      <p id="emp">
+                        1 serving
+                        <a
+                          href="https://www.youtube.com/watch?v=C65t7oIhH-k"
+                          style="color: #383431"
+                          >White Bean & Veggie Salad</a
+                        >
+                      </p>
+                      <h4 id="em4">P.M. Snack (350 calories)</h4>
+                      <p id="emp">
+                        1 large apple (148 calories)<br />
+                        2 Tbsp. natural peanut butter (202 calories)
+                      </p>
+                      <h4 id="em4">Dinner (422 calories)</h4>
+                      <p id="emp">
+                        1 serving
+                        <a href="./Recipes2.html" style="color: #383431"
+                          >Sesame Kohlrabi & Chicken Salad</a
+                        >
+                      </p>
+                    </div>
+                    <div class="col-lg-8 pt-4">
+                      <img
+                        id="imj1"
+                        src="./static/images/Dietplandetails/recipe-1.jpg"
+                      />
+                    </div>
+                  </div>
+                  <div class="row pt-4">
+                    <div class="col">
+                      <p id="emp">
+                        <b>Meal-Prep Tip: </b>Gather ingredients for tomorrow's
+                        dinner, Slow-Cooker Vegetable Minestrone Soup, so it's
+                        ready to start cooking on Low tomorrow morning for 6 to
+                        8 hours.
+                      </p>
+                      <p id="emp">
+                        <b>Daily totals: </b> 1,699 calories, 84 g protein, 142
+                        g carbohydrates, 34 g fiber, 94 g fat, 1,141 mg sodium
+                      </p>
+                      <p id="emp">
+                        <b>To Make It 1,200 Calories: </b>Reduce to 1 tablespoon
+                        of walnuts at breakfast and reduce to half an apple at
+                        P.M. snack, along with omitting the peanut butter.
+                      </p>
+                      <p id="emp">
+                        <b>To Make It 2,000 Calories </b>Increase to 1 1/2 cups
+                        yogurt at breakfast and add 1/3 cup unsalted dry-roasted
+                        almonds to A.M. snack.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Dropdown2-->
+            <div class="card mb-2">
+              <div class="card-header" id="collapsetitle">
+                <a
+                  class="collapsed btn"
+                  data-bs-toggle="collapse"
+                  href="#collapseTwo"
+                >
+                  DAY 2 - Make 3-Ingredient Bell Pepper & Cheese Egg Cups to
+                  have for breakfast.
+                </a>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                data-bs-parent="#accordion"
+              >
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-12 col-lg-4">
+                      <h3 id="em3">DAY 2</h3>
+                      <h4 id="em4">Breakfast (324 calories)</h4>
+                      <p id="emp">
+                        1 serving
+                        <a href="#" style="color: #383431"
+                          >Spinach, Peanut Butter & Banana Smoothie</a
+                        >
+                      </p>
+                      <h4 id="em4">A.M. Snack (214 calories)</h4>
+                      <p id="emp">1/4 cup unsalted dry-roasted almonds</p>
+                      <h4 id="em4">Lunch (381 calories)</h4>
+                      <p id="emp">
+                        1 serving
+                        <a href="#" style="color: #383431"
+                          >Vegan Superfood Grain Bowls</a
+                        >
+                      </p>
+                      <h4 id="em4">P.M. Snack (37 calories)</h4>
+                      <p id="emp">1 medium bell pepper, sliced</p>
+                      <h4 id="em4">Dinner (485 calories)</h4>
+                      <p id="emp">
+                        1 serving
+                        <a href="#" style="color: #383431"
+                          >Slow-Cooker Vegetable Minestrone Soup (222
+                          calories)</a
+                        >
+                      </p>
+                    </div>
+                    <div class="col-lg-8 pt-4">
+                      <img
+                        id="imj1"
+                        src="./static/images/Dietplandetails/recipe-2.jpg"
+                      />
+                    </div>
+                  </div>
+                  <div class="row pt-4">
+                    <div class="col">
+                      <p id="emp">
+                        <b>Meal-Prep Tip: </b>Gather ingredients for tomorrow's
+                        dinner, Slow-Cooker Vegetable Minestrone Soup, so it's
+                        ready to start cooking on Low tomorrow morning for 6 to
+                        8 hours.
+                      </p>
+                      <p id="emp">
+                        <b>Daily totals: </b> 1,699 calories, 84 g protein, 142
+                        g carbohydrates, 34 g fiber, 94 g fat, 1,141 mg sodium
+                      </p>
+                      <p id="emp">
+                        <b>To Make It 1,200 Calories: </b>Reduce to 1 tablespoon
+                        of walnuts at breakfast and reduce to half an apple at
+                        P.M. snack, along with omitting the peanut butter.
+                      </p>
+                      <p id="emp">
+                        <b>To Make It 2,000 Calories </b>Increase to 1 1/2 cups
+                        yogurt at breakfast and add 1/3 cup unsalted dry-roasted
+                        almonds to A.M. snack.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Dropdown3-->
+            <div class="card mb-2">
+              <div class="card-header" id="collapsetitle">
+                <a
+                  class="collapsed btn"
+                  data-bs-toggle="collapse"
+                  href="#collapseThree"
+                >
+                  DAY 3 - Make Vegan Superfood Grain Dishes to have for lunch.
+                </a>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse"
+                data-bs-parent="#accordion"
+              >
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-12 col-lg-4">
+                      <h3 id="em3">DAY 3</h3>
+                      <h4 id="em4">Breakfast (491 calories)</h4>
+                      <p id="emp">
+                        1 cup low-fat plain Greek yogurt (179 calories)<br />
+                        1/4 cup raspberries (19 calories)<br />
+                        3 Tbsp. chopped walnuts (292 calories)
+                      </p>
+                      <h4 id="em4">A.M. Snack (77 calories)</h4>
+                      <p id="emp">1 medium orange</p>
+                      <h4 id="em4">Lunch (360 calories)</h4>
+                      <p id="emp">
+                        1 serving
+                        <a href="#" style="color: #383431"
+                          >White Bean & Veggie Salad</a
+                        >
+                      </p>
+                      <h4 id="em4">P.M. Snack (350 calories)</h4>
+                      <p id="emp">
+                        1 large apple (148 calories)<br />
+                        2 Tbsp. natural peanut butter (202 calories)
+                      </p>
+                      <h4 id="em4">Dinner (422 calories)</h4>
+                      <p id="emp">
+                        1 serving
+                        <a href="#" style="color: #383431"
+                          >Greek Roasted Salmon with Vegetables</a
+                        >
+                      </p>
+                    </div>
+                    <div class="col-lg-8 pt-4">
+                      <img
+                        id="imj1"
+                        src="./static/images/Dietplandetails/recipe-3.jpg"
+                      />
+                    </div>
+                  </div>
+                  <div class="row pt-4">
+                    <div class="col">
+                      <p id="emp">
+                        <b>Meal-Prep Tip: </b>Gather ingredients for tomorrow's
+                        dinner, Slow-Cooker Vegetable Minestrone Soup, so it's
+                        ready to start cooking on Low tomorrow morning for 6 to
+                        8 hours.
+                      </p>
+                      <p id="emp">
+                        <b>Daily totals: </b> 1,699 calories, 84 g protein, 142
+                        g carbohydrates, 34 g fiber, 94 g fat, 1,141 mg sodium
+                      </p>
+                      <p id="emp">
+                        <b>To Make It 1,200 Calories: </b>Reduce to 1 tablespoon
+                        of walnuts at breakfast and reduce to half an apple at
+                        P.M. snack, along with omitting the peanut butter.
+                      </p>
+                      <p id="emp">
+                        <b>To Make It 2,000 Calories </b>Increase to 1 1/2 cups
+                        yogurt at breakfast and add 1/3 cup unsalted dry-roasted
+                        almonds to A.M. snack.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Dropdown4-->
+            <div class="card mb-2">
+              <div class="card-header" id="collapsetitle">
+                <a
+                  class="collapsed btn"
+                  data-bs-toggle="collapse"
+                  href="#collapseFour"
+                >
+                  DAY 4 - Make 3-Ingredient Bell Pepper & Cheese Egg Cups to
+                  have for breakfast .
+                </a>
+              </div>
+              <div
+                id="collapseFour"
+                class="collapse"
+                data-bs-parent="#accordion"
+              >
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-12 col-lg-4">
+                      <h3 id="em3">DAY 4</h3>
+                      <h4 id="em4">Breakfast (491 calories)</h4>
+                      <p id="emp">
+                        1 cup low-fat plain Greek yogurt (179 calories)<br />
+                        1/4 cup raspberries (19 calories)<br />
+                        3 Tbsp. chopped walnuts (292 calories)
+                      </p>
+                      <h4 id="em4">A.M. Snack (77 calories)</h4>
+                      <p id="emp">1 medium orange</p>
+                      <h4 id="em4">Lunch (360 calories)</h4>
+                      <p id="emp">
+                        1 serving
+                        <a href="#" style="color: #383431"
+                          >White Bean & Veggie Salad</a
+                        >
+                      </p>
+                      <h4 id="em4">P.M. Snack (350 calories)</h4>
+                      <p id="emp">
+                        1 large apple (148 calories)<br />
+                        2 Tbsp. natural peanut butter (202 calories)
+                      </p>
+                      <h4 id="em4">Dinner (422 calories)</h4>
+                      <p id="emp">
+                        1 serving
+                        <a href="#" style="color: #383431"
+                          >Greek Roasted Salmon with Vegetables</a
+                        >
+                      </p>
+                    </div>
+                    <div class="col-lg-8 pt-4">
+                      <img
+                        id="imj1"
+                        src="./static/images/Dietplandetails/recipe-4.jpg"
+                      />
+                    </div>
+                  </div>
+                  <div class="row pt-4">
+                    <div class="col">
+                      <p id="emp">
+                        <b>Meal-Prep Tip: </b>Gather ingredients for tomorrow's
+                        dinner, Slow-Cooker Vegetable Minestrone Soup, so it's
+                        ready to start cooking on Low tomorrow morning for 6 to
+                        8 hours.
+                      </p>
+                      <p id="emp">
+                        <b>Daily totals: </b> 1,699 calories, 84 g protein, 142
+                        g carbohydrates, 34 g fiber, 94 g fat, 1,141 mg sodium
+                      </p>
+                      <p id="emp">
+                        <b>To Make It 1,200 Calories: </b>Reduce to 1 tablespoon
+                        of walnuts at breakfast and reduce to half an apple at
+                        P.M. snack, along with omitting the peanut butter.
+                      </p>
+                      <p id="emp">
+                        <b>To Make It 2,000 Calories </b>Increase to 1 1/2 cups
+                        yogurt at breakfast and add 1/3 cup unsalted dry-roasted
+                        almonds to A.M. snack.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Dropdown5-->
+            <div class="card mb-2">
+              <div class="card-header" id="collapsetitle">
+                <a
+                  class="collapsed btn"
+                  data-bs-toggle="collapse"
+                  href="#collapseFive"
+                >
+                  DAY 5 - Make the Copycat Starbucks Spinach & Mushroom Egg
+                  Bites for breakfast.
+                </a>
+              </div>
+              <div
+                id="collapseFive"
+                class="collapse"
+                data-bs-parent="#accordion"
+              >
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-12 col-lg-4">
+                      <h3 id="em3">DAY 5</h3>
+                      <h4 id="em4">Breakfast (491 calories)</h4>
+                      <p id="emp">
+                        1 cup low-fat plain Greek yogurt (179 calories)<br />
+                        1/4 cup raspberries (19 calories)<br />
+                        3 Tbsp. chopped walnuts (292 calories)
+                      </p>
+                      <h4 id="em4">A.M. Snack (77 calories)</h4>
+                      <p id="emp">1 medium orange</p>
+                      <h4 id="em4">Lunch (360 calories)</h4>
+                      <p id="emp">
+                        1 serving
+                        <a href="#" style="color: #383431"
+                          >White Bean & Veggie Salad</a
+                        >
+                      </p>
+                      <h4 id="em4">P.M. Snack (350 calories)</h4>
+                      <p id="emp">
+                        1 large apple (148 calories)<br />
+                        2 Tbsp. natural peanut butter (202 calories)
+                      </p>
+                      <h4 id="em4">Dinner (422 calories)</h4>
+                      <p id="emp">
+                        1 serving
+                        <a href="#" style="color: #383431"
+                          >Greek Roasted Salmon with Vegetables</a
+                        >
+                      </p>
+                    </div>
+                    <div class="col-lg-8 pt-4">
+                      <img
+                        id="imj1"
+                        src="./static/images/Dietplandetails/recipe-5.jpg"
+                      />
+                    </div>
+                  </div>
+                  <div class="row pt-4">
+                    <div class="col">
+                      <p id="emp">
+                        <b>Meal-Prep Tip: </b>Gather ingredients for tomorrow's
+                        dinner, Slow-Cooker Vegetable Minestrone Soup, so it's
+                        ready to start cooking on Low tomorrow morning for 6 to
+                        8 hours.
+                      </p>
+                      <p id="emp">
+                        <b>Daily totals: </b> 1,699 calories, 84 g protein, 142
+                        g carbohydrates, 34 g fiber, 94 g fat, 1,141 mg sodium
+                      </p>
+                      <p id="emp">
+                        <b>To Make It 1,200 Calories: </b>Reduce to 1 tablespoon
+                        of walnuts at breakfast and reduce to half an apple at
+                        P.M. snack, along with omitting the peanut butter.
+                      </p>
+                      <p id="emp">
+                        <b>To Make It 2,000 Calories </b>Increase to 1 1/2 cups
+                        yogurt at breakfast and add 1/3 cup unsalted dry-roasted
+                        almonds to A.M. snack.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Dropdown6-->
+            <div class="card mb-2">
+              <div class="card-header" id="collapsetitle">
+                <a
+                  class="collapsed btn"
+                  data-bs-toggle="collapse"
+                  href="#collapseSix"
+                >
+                  DAY 6 - Make the Copycat Starbucks Spinach & Mushroom Egg
+                  Bites for breakfast.
+                </a>
+              </div>
+              <div
+                id="collapseSix"
+                class="collapse"
+                data-bs-parent="#accordion"
+              >
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-12 col-lg-4">
+                      <h3 id="em3">DAY 6</h3>
+                      <h4 id="em4">Breakfast (491 calories)</h4>
+                      <p id="emp">
+                        1 cup low-fat plain Greek yogurt (179 calories)<br />
+                        1/4 cup raspberries (19 calories)<br />
+                        3 Tbsp. chopped walnuts (292 calories)
+                      </p>
+                      <h4 id="em4">A.M. Snack (77 calories)</h4>
+                      <p id="emp">1 medium orange</p>
+                      <h4 id="em4">Lunch (360 calories)</h4>
+                      <p id="emp">
+                        1 serving
+                        <a href="#" style="color: #383431"
+                          >White Bean & Veggie Salad</a
+                        >
+                      </p>
+                      <h4 id="em4">P.M. Snack (350 calories)</h4>
+                      <p id="emp">
+                        1 large apple (148 calories)<br />
+                        2 Tbsp. natural peanut butter (202 calories)
+                      </p>
+                      <h4 id="em4">Dinner (422 calories)</h4>
+                      <p id="emp">
+                        1 serving
+                        <a href="#" style="color: #383431"
+                          >Greek Roasted Salmon with Vegetables</a
+                        >
+                      </p>
+                    </div>
+                    <div class="col-lg-8 pt-4">
+                      <img
+                        id="imj1"
+                        src="./static/images/Dietplandetails/recipe-6.jpg"
+                      />
+                    </div>
+                  </div>
+                  <div class="row pt-4">
+                    <div class="col">
+                      <p id="emp">
+                        <b>Meal-Prep Tip: </b>Gather ingredients for tomorrow's
+                        dinner, Slow-Cooker Vegetable Minestrone Soup, so it's
+                        ready to start cooking on Low tomorrow morning for 6 to
+                        8 hours.
+                      </p>
+                      <p id="emp">
+                        <b>Daily totals: </b> 1,699 calories, 84 g protein, 142
+                        g carbohydrates, 34 g fiber, 94 g fat, 1,141 mg sodium
+                      </p>
+                      <p id="emp">
+                        <b>To Make It 1,200 Calories: </b>Reduce to 1 tablespoon
+                        of walnuts at breakfast and reduce to half an apple at
+                        P.M. snack, along with omitting the peanut butter.
+                      </p>
+                      <p id="emp">
+                        <b>To Make It 2,000 Calories </b>Increase to 1 1/2 cups
+                        yogurt at breakfast and add 1/3 cup unsalted dry-roasted
+                        almonds to A.M. snack.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Dropdown7-->
+            <div class="card mb-2">
+              <div class="card-header" id="collapsetitle">
+                <a
+                  class="collapsed btn"
+                  data-bs-toggle="collapse"
+                  href="#collapseSeven"
+                >
+                  DAY 7 - Make the Copycat Starbucks Spinach & Mushroom Egg
+                  Bites for breakfast.
+                </a>
+              </div>
+              <div
+                id="collapseSeven"
+                class="collapse"
+                data-bs-parent="#accordion"
+              >
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-12 col-lg-4">
+                      <h3 id="em3">DAY 7</h3>
+                      <h4 id="em4">Breakfast (491 calories)</h4>
+                      <p id="emp">
+                        1 cup low-fat plain Greek yogurt (179 calories)<br />
+                        1/4 cup raspberries (19 calories)<br />
+                        3 Tbsp. chopped walnuts (292 calories)
+                      </p>
+                      <h4 id="em4">A.M. Snack (77 calories)</h4>
+                      <p id="emp">1 medium orange</p>
+                      <h4 id="em4">Lunch (360 calories)</h4>
+                      <p id="emp">
+                        1 serving
+                        <a href="#" style="color: #383431"
+                          >White Bean & Veggie Salad</a
+                        >
+                      </p>
+                      <h4 id="em4">P.M. Snack (350 calories)</h4>
+                      <p id="emp">
+                        1 large apple (148 calories)<br />
+                        2 Tbsp. natural peanut butter (202 calories)
+                      </p>
+                      <h4 id="em4">Dinner (422 calories)</h4>
+                      <p id="emp">
+                        1 serving
+                        <a href="#" style="color: #383431"
+                          >Greek Roasted Salmon with Vegetables</a
+                        >
+                      </p>
+                    </div>
+                    <div class="col-lg-8 pt-4">
+                      <img
+                        id="imj1"
+                        src="./static/images/Dietplandetails/recipe-7.jpg"
+                      />
+                    </div>
+                  </div>
+                  <div class="row pt-4">
+                    <div class="col">
+                      <p id="emp">
+                        <b>Meal-Prep Tip: </b>Gather ingredients for tomorrow's
+                        dinner, Slow-Cooker Vegetable Minestrone Soup, so it's
+                        ready to start cooking on Low tomorrow morning for 6 to
+                        8 hours.
+                      </p>
+                      <p id="emp">
+                        <b>Daily totals: </b> 1,699 calories, 84 g protein, 142
+                        g carbohydrates, 34 g fiber, 94 g fat, 1,141 mg sodium
+                      </p>
+                      <p id="emp">
+                        <b>To Make It 1,200 Calories: </b>Reduce to 1 tablespoon
+                        of walnuts at breakfast and reduce to half an apple at
+                        P.M. snack, along with omitting the peanut butter.
+                      </p>
+                      <p id="emp">
+                        <b>To Make It 2,000 Calories </b>Increase to 1 1/2 cups
+                        yogurt at breakfast and add 1/3 cup unsalted dry-roasted
+                        almonds to A.M. snack.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Popular recipes-->
+    <div class="container my-4">
+      <div><h2 id="em2">Popular Diet Plans</h2></div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="./static/images/Dietplandetails/adrecipe1.jpg"
+              alt="Dp1"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h3 class="card-title" id="em3">
+                Gluten & Dairy Free Diet: 1,200 Calories
+              </h3>
+              <p class="card-text" id="emp">
+                This gluten and dairy-free diet plan features tasty recipes and
+                snack ideas to create a balanced day of eating.
+              </p>
+              <h6 id="em6">By: Victoria Siena</h6>
+              <a href="#" class="button1"><p id="textemp">Read More</p> </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="./static/images/Dietplandetails/adrecipe2.jpg"
+              alt="Dp1"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h3 class="card-title" id="em3">
+                Low Cholesterol Diet Plan for Beginners
+              </h3>
+              <p class="card-text" id="emp">
+                By following this easy 7-day low cholesterol meal plan for
+                beginners, learn how to lower your high cholesterol.
+              </p>
+              <h6 id="em6">By: By: Peter Row</h6>
+              <a href="#" class="button1"><p id="textemp">Read More</p> </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="./static/images/Dietplandetails/adrecipe3.jpg"
+              alt="Dp1"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h3 class="card-title" id="em3">
+                7-Day Diabetes-Friendly Meal Plan for High Cholesterol
+              </h3>
+              <p class="card-text" id="emp">
+                Lower your blood sugar while improving heart health in this one
+                week diabetes-friendly plan for high cholesterol.
+              </p>
+              <h6 id="em6">By: By: Anna San</h6>
+              <a href="#" class="button1"><p id="textemp">Read More</p> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+
+    <section class="">
+      <!-- Footer -->
+      <footer
+        class="text-white text-center text-md-start"
+        style="
+          background-color: #383431;
+          color: #fffffd;
+          font-size: 14px;
+          font-weight: 400;
+        "
+      >
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <a href="./index.html">
+                <img
+                  src="./static/images/Footer Logo.png"
+                  alt="Hand picked meal plan 1"
+                  style="width: 200px; height: auto"
+                />
+              </a>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-3">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text-white"
+                    ><p style="font-size: 1em">Site</p></a
+                  >
+                </li>
+                <li>
+                  <p style="font-size: 1em; color: #fffffd">About us</p>
+                </li>
+                <li>
+                  <p style="font-size: 1em; color: #fffffd">Career</p>
+                </li>
+                <li>
+                  <p style="font-size: 1em; color: #fffffd">Press</p>
+                </li>
+                <li>
+                  <p style="font-size: 1em; color: #fffffd">Become a partner</p>
+                </li>
+                <!--<li>
+                  <a href="#!" class="text-white"><p>Become a partner</p></a>
+                </li>-->
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-3">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text-white"
+                    ><p style="font-size: 1em">Follow us on</p></a
+                  >
+                </li>
+                <li>
+                  <section class="mb-4">
+                    <!-- Facebook -->
+                    <a
+                      class="btn btn-outline-light btn-floating m-1"
+                      href="#!"
+                      role="button"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+
+                    <!-- Twitter -->
+                    <a
+                      class="btn btn-outline-light btn-floating m-1"
+                      href="#!"
+                      role="button"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+
+                    <!-- Instagram -->
+                    <a
+                      class="btn btn-outline-light btn-floating m-1"
+                      href="#!"
+                      role="button"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </section>
+                </li>
+                <li>
+                  <p style="font-size: 1em; color: #fffffd">
+                    Want to be part of us?
+                  </p>
+                </li>
+                <li>
+                  <a href="#!" class="text-white"
+                    ><p style="font-size: 1em">Get in touch</p></a
+                  >
+                </li>
+                <li>
+                  <p style="font-size: 0.8em; color: #fffffd">
+                    Designed and built with all the love in the world by <br />
+                    thePlannedplate team.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+          <!-- Copyright -->
+          <div class="text-center" style="color: #fffffd">
+            © 2021 Copyright:
+            <a class="#" href="./index.html" style="color: #fffffd"
+              >theplannedplate.com</a
+            >
+          </div>
+          <!-- Copyright -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+      <!-- Footer -->
+    </section>
+    <!--Footer-->
+  </body>
+</html>
